@@ -6,7 +6,7 @@ import (
 )
 
 func TestCommand(t *testing.T) {
-	proxy, err := New("198.xx.xx.xx:54345", Socks5Version)
+	proxy, err := New("198.xx.xx.xx:54345", SocksVersion5)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -18,7 +18,7 @@ func TestCommand(t *testing.T) {
 }
 
 func TestTimeout(t *testing.T){
-	proxy, err := New("198.xx.xx.xx:54345", Socks5Version)
+	proxy, err := New("198.xx.xx.xx:54345", SocksVersion5)
 	if err != nil {
 		t.Fatal(err)
 	}

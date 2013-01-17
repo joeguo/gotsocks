@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-    proxy, err := gotsocks.New("198.xx.xx.xx:12345", gotsocks.Socks5Version)
+    proxy, err := gotsocks.New("198.xx.xx.xx:12345", gotsocks.SocksVersion5)
 	if err != nil {
 		t.Fatal(err)
 	}
