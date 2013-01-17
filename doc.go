@@ -1,17 +1,8 @@
-gotsocks
-========
+/*
+Package gotsocks makes it easy to use tsocks proxy command easy in golang
 
-Execute command with [tsocks](http://tsocks.sourceforge.net) proxy in golang
+A simple example:
 
-Installation
-==========
-Install tldextract:
-```sh
-go get github.com/joeguo/gotsocks
-
-Example
-==========
-```go
 package main
 
 import (
@@ -30,4 +21,6 @@ func main() {
 	}
 	fmt.Println(string(result))
 }
-```
+ */
+package gotsocks
+
