@@ -12,8 +12,8 @@ import (
 )
 
 const (
-	SocksVersion5 = 5
-	SocksVersion4 = 4
+	Socks5 = 5
+	Socks4 = 4
 )
 
 var (
