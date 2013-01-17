@@ -5,7 +5,8 @@ Execute command with [tsocks](http://tsocks.sourceforge.net) proxy in golang
 
 Installation
 ==========
-Install tldextract:
+Install gotsocks:
+
 ```sh
 go get github.com/joeguo/gotsocks
 
