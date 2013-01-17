@@ -45,7 +45,7 @@ type Proxy struct {
 }
 
 //proxy format: user:password@ip:port
-//version:SocksVersion5 or SocksVersion4
+//version:Socks5 or Socks4
 func New(proxy string, version int) (*Proxy, error) {
 	temp := strings.FieldsFunc(proxy, func(r rune) bool {
 			switch r{
