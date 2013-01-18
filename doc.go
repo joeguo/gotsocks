@@ -13,11 +13,11 @@ import (
 func main() {
     proxy, err := gotsocks.New("198.xx.xx.xx:12345", gotsocks.Socks5)
 	if err != nil {
-		t.Fatal(err)
+		fmt.Println(err)
 	}
 	result, err := proxy.Command("/usr/bin/whois", 10, "google.com")
 	if err != nil {
-		t.Fatal(err)
+		fmt.Println(err)
 	}
 	fmt.Println(string(result))
 }
