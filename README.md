@@ -1,10 +1,21 @@
 gotsocks
 ========
 
-Execute command with [tsocks](http://tsocks.sourceforge.net) proxy in golang
+Execute command with [tsocks](http://tsocks.sourceforge.net)(a transparent SOCKS proxy library) in golang
 
 Installation
 ==========
+Install tsocks:
+```sh
+For Ubuntu/Debian
+
+apt-get install tsocks
+
+For CentOS/Fedora
+
+yum install tsocks
+
+```
 Install gotsocks:
 
 ```sh
