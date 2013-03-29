@@ -75,7 +75,7 @@ func (proxy *Proxy) Command(name string, timeout int64, arg ...string) ([]byte, 
 	cmd.Stdout = &buffer
 
 	if err = cmd.Start(); err != nil {
-		return nil, err
+		return buffer.Bytes(), err
 	}
 	c := make(chan error)
 	go func() {

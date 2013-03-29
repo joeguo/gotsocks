@@ -6,23 +6,24 @@ import (
 )
 
 func TestCommand(t *testing.T) {
-	proxy, err := New("198.xx.xx.xx:54345", Socks5)
+	proxy, err := New("joe:abcd1234@198.98.108.119:54321", Socks5)
 	if err != nil {
 		t.Fatal(err)
 	}
-	result, err := proxy.Command("/usr/bin/whois", 10, "google.com")
-	if err != nil {
-		t.Fatal(err)
-	}
+	result, err := proxy.Command("/usr/bin/whois", 10, "wordpress.org")
 	fmt.Println(string(result))
+	if err != nil {
+		t.Fatal(err)
+	}
+
 }
 
-func TestTimeout(t *testing.T){
-	proxy, err := New("198.xx.xx.xx:54345", Socks5)
+func aTestTimeout(t *testing.T){
+	proxy, err := New("joe:abcd1234@199.188.74.170:54321", Socks5)
 	if err != nil {
 		t.Fatal(err)
 	}
-	result, err := proxy.Command("/usr/bin/whois", 1, "yahoo.com")
+	result, err := proxy.Command("/usr/bin/whois", 10, "yahoo.com")
 	if err != nil {
 		t.Fatal(err)
 	}
