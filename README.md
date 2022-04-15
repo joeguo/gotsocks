@@ -36,10 +36,12 @@ func main() {
     proxy, err := gotsocks.New("198.xx.xx.xx:12345", gotsocks.Socks5)
 	if err != nil {
 		fmt.Println(err)
+		return
 	}
 	result, err := proxy.Command("/usr/bin/whois", 10, "google.com")
 	if err != nil {
 		fmt.Println(err)
+		return
 	}
 	fmt.Println(string(result))
 }
